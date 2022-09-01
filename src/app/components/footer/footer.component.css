@@ -1,0 +1,30 @@
+
+@media (max-width: 800px){
+  
+    div.footer{
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    div.text{
+        text-align: center;
+    }
+
+    img.altura{
+        height: 220px;
+    }
+    
+}
+
+@media (min-width: 800px){
+  
+    div.footer{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    img.altura{
+        height: 60px;
+    }
+    
+    
+}

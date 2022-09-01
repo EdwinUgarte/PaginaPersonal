@@ -1,0 +1,38 @@
+div.itemDiv:hover{
+background-color: #2583e0;
+color: aliceblue;
+}
+
+@media (max-width: 800px){
+    div.CardWidth{
+        width: 100%;
+    }
+    img.cardHero{
+        width: 90%;
+    }
+    div.cardHero{
+        width: 90%;
+        height: 30vh;
+        background-position: center;
+    }
+
+    div.footer{
+        flex-direction: row;
+    }
+    
+}
+@media (min-width: 800px){
+    div.CardWidth{
+        width: 50%;
+    }
+    img.cardHero{
+        width: 25%;
+    }
+    div.cardHero{
+        width: 80%;
+        height: 450px;
+    }
+    
+}
+
+
