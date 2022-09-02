@@ -23,7 +23,7 @@ const routes: Routes = [
     NavbarComponent,
     InicioComponent,
     FooterComponent,
-    SobreComponent,
+    SobreComponent
   ],
   imports: [
     BrowserModule,

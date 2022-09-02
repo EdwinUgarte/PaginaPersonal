@@ -18,7 +18,9 @@ color: aliceblue;
 
     div.footer{
         flex-direction: row;
+        
     }
+
     
 }
 @media (min-width: 800px){
