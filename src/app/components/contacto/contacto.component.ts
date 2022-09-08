@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
-import Swal from 'sweetalert2';
+
 
 @Component({
   selector: 'app-contacto',
@@ -25,7 +25,7 @@ export class ContactoComponent implements OnInit {
       .then(
         (result: EmailJSResponseStatus) => {
           console.log(result.text);
-          Swal.fire('Enviado!', '¡Gracias! Tu mensaje se ha enviado con exito', 'success');
+          alert('Enviado!'+ ' ' + '¡Gracias! Tu mensaje se ha enviado con exito');
           this.route.navigate([('/inicio')])
         },
         (error) => {
