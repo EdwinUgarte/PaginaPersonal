@@ -7,13 +7,15 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SobreComponent } from './components/sobre/sobre.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
 
 
 
 const routes: Routes = [
   {path: '', redirectTo: '/inicio', pathMatch: 'full'},
   {path: 'inicio', component:  InicioComponent},
-  {path: 'sobre', component:  SobreComponent}
+  {path: 'sobre', component:  SobreComponent},
+  {path: 'contacto', component: ContactoComponent}
 ]
 
 
@@ -23,7 +25,8 @@ const routes: Routes = [
     NavbarComponent,
     InicioComponent,
     FooterComponent,
-    SobreComponent
+    SobreComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,

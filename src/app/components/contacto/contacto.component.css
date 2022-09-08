@@ -1,0 +1,70 @@
+button.button {
+  background-color: #2583e0;
+  color: aliceblue;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 10px;
+}
+button.buttonW {
+    background-color: #00bb2d;
+    color: aliceblue;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 10px;
+  }
+div.card{
+    border-style: solid; display: flex; flex-direction: row; justify-content: space-between;flex-wrap: wrap;
+}
+
+
+
+@media screen and (min-width: 800px) {
+    div.hero{
+      margin: 0px 50px  0px 50px;
+      padding: 50px;
+      height: 200px;
+    }
+    form{
+      margin: 10px 100px;
+      width: 70%;
+      border-style: solid;
+      border-color: #2583e0;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    div.card{
+      width: 40vw;
+    }
+    div.containerCard{
+        margin: 20px 50px;
+    }
+    div.cardWidth{
+        width: 50%;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    div.hero{
+      margin: 0px 0px  10px 0px;
+      padding: 25px;
+      height: 150px;
+    }
+    form{
+      margin: 0px 0px;
+      width: 90vw;
+    }
+    div.card{
+      width: 100vw;
+      flex-direction: column;
+      margin: 20px 0px;
+    }
+    div.containerCard{
+        margin: 20px 10px;
+    }
+    div.cardWidth{
+        width: 100%;
+    }
+  }

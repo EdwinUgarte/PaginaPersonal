@@ -1,0 +1,79 @@
+<div
+  class="hero"
+  style="
+    background-color: #2583e0;
+    color: aliceblue;
+    border-radius: 0px 0px 10px 10px;
+  "
+>
+  <div>
+    <h1>¡Comunicate conmigo!</h1>
+    <p>Si deseas contactarte conmigo para mayor información, puedes hacerlo</p>
+  </div>
+</div>
+<div style="display: flex; justify-content: center; width: 100%;">
+  <form id="form" (submit)="sendMail($event)">
+    <div style="margin-bottom: 10px">
+      <label for="nombre" class="form-label">*Nombre:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="nombre"
+        required
+        name="nombre"
+      />
+    </div>
+    <div style="margin-bottom: 10px">
+      <label for="empresa" class="form-label">Empresa:</label>
+      <input type="text" class="form-control" id="empresa" name="empresa" />
+    </div>
+    <div style="margin-bottom: 10px">
+      <label for="exampleFormControlInput1" class="form-label"
+        >*Email address:</label
+      >
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        placeholder="name@example.com"
+        required
+        name="email"
+      />
+    </div>
+    <div style="margin-bottom: 10px">
+      <label for="name" class="form-label">Telefono:</label>
+      <input type="number" class="form-control" id="telefono" name="telefono" />
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label"
+        >Mensaje:</label
+      >
+      <textarea
+        class="form-control"
+        id="message"
+        rows="3"
+        required
+        name="message"
+        placeholder="Escribe aqui lo que me quieres decir..."
+      ></textarea>
+    </div>
+    <button class="button" type="submit">Enviar Email</button>
+  </form>
+</div>
+<hr style="width: 90%; margin: 30px auto;">
+<div class="containerCard" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+  <div class="card">
+    <div class="cardWidth" style="height: 250px; background-color: grey">
+      <img src="assets/Images/Cv.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
+    <div class="cardWidth" style=" text-align: center; display: flex; justify-content: center; align-items: center; flex-direction: column;"><div style="margin-bottom: 10px;">Puedes descargar mi Curriculum Vitae</div><a href="../../../assets/documents/Curriculum.pdf" download><button class="button">Descargar CV</button></a></div>
+  </div>
+  <div class="card">
+    <div class="cardWidth" style="height: 250px; background-color: grey">
+      <img src="assets/Images/wpLogo.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
+    <div class="cardWidth" style=" text-align: center; display: flex; justify-content: center; align-items: center; flex-direction: column;"><div style="margin-bottom: 10px;">Puedes descargar mi Curriculum Vitae</div><a href="https://api.whatsapp.com/send?phone=7731668021" target="_blank"><button class="buttonW">Enviar WhatsApp</button></a></div>
+  </div>
+</div>
+<hr style="width: 90%; margin: 30px auto;">
