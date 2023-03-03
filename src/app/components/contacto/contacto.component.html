@@ -11,7 +11,7 @@
     <p>Si deseas contactarte conmigo para mayor información, puedes hacerlo</p>
   </div>
 </div>
-<div style="display: flex; justify-content: center; width: 100%;">
+<div style="display: flex; justify-content: center; width: 100%">
   <form id="form" (submit)="sendMail($event)">
     <div style="margin-bottom: 10px">
       <label for="nombre" class="form-label">*Nombre:</label>
@@ -61,19 +61,60 @@
     <button class="button" type="submit">Enviar Email</button>
   </form>
 </div>
-<hr style="width: 90%; margin: 30px auto;">
-<div class="containerCard" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+<hr style="width: 90%; margin: 30px auto" />
+<div
+  class="containerCard"
+  style="display: flex; flex-wrap: wrap; justify-content: space-between"
+>
   <div class="card">
     <div class="cardWidth" style="height: 250px; background-color: grey">
-      <img src="assets/Images/Cv.jpg" alt="Imagen" style="width: 100%; height: 100%; object-fit: cover;">
+      <img
+        src="assets/Images/Cv.png"
+        alt="Imagen"
+        style="width: 100%; height: 100%; object-fit: cover"
+      />
     </div>
-    <div class="cardWidth" style=" text-align: center; display: flex; justify-content: center; align-items: center; flex-direction: column;"><div style="margin-bottom: 10px;">Puedes descargar mi Curriculum Vitae</div><a href="../../../assets/documents/Curriculum.pdf" download><button class="button">Descargar CV</button></a></div>
+    <div
+      class="cardWidth"
+      style="
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      "
+    >
+      <div style="margin-bottom: 10px">
+        Puedes descargar mi Curriculum Vitae
+      </div>
+      <a href="../../../assets/documents/Curriculum.pdf" download
+        ><button class="button">Descargar CV</button></a
+      >
+    </div>
   </div>
   <div class="card">
     <div class="cardWidth" style="height: 250px; background-color: grey">
-      <img src="assets/Images/wpLogo.jpg" alt="wpLogo" style="width: 100%; height: 100%; object-fit: cover;">
+      <img
+        src="assets/Images/wpLogo.jpg"
+        alt="wpLogo"
+        style="width: 100%; height: 100%; object-fit: cover"
+      />
     </div>
-    <div class="cardWidth" style=" text-align: center; display: flex; justify-content: center; align-items: center; flex-direction: column;"><div style="margin-bottom: 10px;">Enviame un mensaje privado</div><a href="https://api.whatsapp.com/send?phone=7731668021" target="_blank"><button class="buttonW">Enviar WhatsApp</button></a></div>
+    <div
+      class="cardWidth"
+      style="
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      "
+    >
+      <div style="margin-bottom: 10px">Enviame un mensaje privado</div>
+      <a href="https://api.whatsapp.com/send?phone=7731668021" target="_blank"
+        ><button class="buttonW">Enviar WhatsApp</button></a
+      >
+    </div>
   </div>
 </div>
-<hr style="width: 90%; margin: 30px auto;">
+<hr style="width: 90%; margin: 30px auto" />
